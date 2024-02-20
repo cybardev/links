@@ -5,18 +5,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="All my links in one place!" />
         <title>Cy | Dev - Links</title>
-        <link
-            rel="icon"
-            type="image/x-icon"
-            href="./assets/images/favicon.ico"
-        />
-        <link rel="stylesheet" href="./assets/css/style.css" />
-        <script
-            defer
-            src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
-        ></script>
-        <script src="./assets/js/links.js"></script>
-        <script src="./assets/js/script.js"></script>
+        <link rel="icon" type="image/x-icon" href="favicon.ico" />
+        <link rel="stylesheet" href="style.css" />
+        <script src="links.js"></script>
     </head>
     <body x-data="data">
         <header>
@@ -35,7 +26,7 @@
         <footer>
             Made with
             <img
-                src="./assets/images/heart.svg"
+                src="heart.svg"
                 alt="vector graphics of pink heart emoji"
                 id="heart"
                 width="16px"
@@ -44,5 +35,6 @@
             by
             <a :href="data.links.GitHub" x-text="data.handle"></a>
         </footer>
+        <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
     </body>
 </html>
