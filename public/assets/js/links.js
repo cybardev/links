@@ -9,5 +9,7 @@ const data = {
         Resume: "https://resume.cybar.dev",
         Blog: "https://blog.cybar.dev",
         Instagram: "https://instagram.com/cybardev",
+        Store: "https://shop.cybar.dev",
+        Email: "mailto:sheikh@cybar.dev",
     },
 };
