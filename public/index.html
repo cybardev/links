@@ -28,9 +28,7 @@
                 x-for="[link, url] in Object.entries(data.links)"
                 :key="link"
             >
-                <div>
-                    <a :href="url" x-text="link" class="link"></a>
-                </div>
+                <a :href="url" x-text="link" class="link"></a>
             </template>
         </main>
         <footer>
