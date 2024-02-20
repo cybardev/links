@@ -2,4 +2,4 @@
 
 ## Social media landing page
 
-Linktree, but mine.
+All my links in one place!
