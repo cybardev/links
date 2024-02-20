@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Cy | Dev - Links</title>
+        <link
+            rel="icon"
+            type="image/x-icon"
+            href="./assets/images/favicon.ico"
+        />
+        <link rel="stylesheet" href="./assets/css/style.css" />
+        <script
+            defer
+            src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
+        ></script>
+        <script src="./links.js"></script>
+        <script src="./assets/js/script.js"></script>
+    </head>
+    <body x-data="data">
+        <header>
+            <h1 x-text="data.name"></h1>
+            <h2 x-text="data.handle"></h2>
+            <h3 x-text="data.tagline"></h3>
+        </header>
+        <main>
+            <template
+                x-for="[link, url] in Object.entries(data.links)"
+                :key="link"
+            >
+                <div>
+                    <a :href="url" x-text="link" class="link"></a>
+                </div>
+            </template>
+        </main>
+        <footer>
+            Made with
+            <img src="./assets/images/heart.svg" alt="heart" id="heart" /> by
+            <a :href="data.links.GitHub" x-text="data.handle"></a>
+        </footer>
+    </body>
+</html>

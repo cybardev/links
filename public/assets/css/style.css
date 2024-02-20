@@ -1,0 +1,67 @@
+:root {
+    font-family: monospace;
+}
+
+/* Header */
+header {
+    margin: 0;
+    padding-block: 4vh;
+    background-image: linear-gradient(135deg, #e2ade4, #dc3273);
+    text-align: center;
+}
+
+/* Body */
+body {
+    height: 100vh;
+    background-color: black;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    color: whitesmoke;
+    text-align: center;
+}
+main {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding-block: 5vh;
+    text-align: center;
+    align-items: center;
+}
+
+/* Buttons */
+main > div {
+    width: 256px;
+    margin-block: 1vh;
+    padding-block: 1.5vh;
+    border: 3px solid whitesmoke;
+    border-radius: 5px;
+    color: whitesmoke;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.2s;
+}
+main > div > a.link {
+    color: whitesmoke;
+    text-decoration: none;
+    font-size: large;
+    font-weight: bold;
+}
+/* hover animation */
+main > div:hover {
+    /* background-image: linear-gradient(135deg, #e2ade4, #dc3273); */
+    border: 3px solid #e2ade4;
+}
+
+/* Footer */
+footer {
+    margin-bottom: 4vh;
+    font-size: large;
+}
+footer > a {
+    text-decoration: none;
+    color: #e2ade4;
+}
+#heart {
+    height: 16px;
+}
