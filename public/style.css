@@ -7,7 +7,6 @@ header {
     margin: 0;
     padding-block: 1vh;
     background-image: linear-gradient(135deg, #e2ade4, #dc3273);
-    text-align: center;
 }
 
 /* Body */
@@ -20,17 +19,16 @@ body {
     color: whitesmoke;
     text-align: center;
 }
-main {
+main#links {
     flex: 1;
     display: flex;
     flex-direction: column;
     padding-block: 5vh;
-    text-align: center;
     align-items: center;
 }
 
 /* Buttons */
-main > a.link {
+main#links > a.link {
     width: 256px;
     margin-block: 1vh;
     padding-block: 1.5vh;
@@ -44,17 +42,16 @@ main > a.link {
     transition: 0.16s;
 }
 /* hover animation */
-main > a.link:hover {
+main#links > a.link:hover {
     /* background-image: linear-gradient(135deg, #e2ade4, #dc3273); */
     border: 3px solid #e2ade4;
 }
 
 /* Footer */
-footer {
-    margin-bottom: 4vh;
+footer > p#footer-text {
     font-size: large;
 }
-footer > a {
+footer > p#footer-text > a {
     text-decoration: none;
     color: #e2ade4;
 }
