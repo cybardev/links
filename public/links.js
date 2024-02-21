@@ -1,8 +1,7 @@
 const data = {
     name: "Sheikh",
     handle: "cybardev",
-    tagline: "Software Developer | Pixel Artist | Computer Science Student",
-    location: "Halifax, NS, Canada",
+    tagline: "Software Developer | Pixel Artist | DevOps Enthusiast",
     links: {
         GitHub: "https://github.com/cybardev",
         Linkedin: "https://linkedin.com/in/cybardev",
