@@ -4,14 +4,13 @@
 
 /* Header */
 header {
-    margin: 0;
     padding-block: 1vh;
     background-image: linear-gradient(135deg, #e2ade4, #dc3273);
 }
 
 /* Body */
 body {
-    height: 100vh;
+    min-height: 100vh;
     background-color: black;
     margin: 0;
     display: flex;
@@ -20,16 +19,16 @@ body {
     text-align: center;
 }
 main#links {
-    flex: 1;
+    margin: auto 0;
     display: flex;
     flex-direction: column;
-    padding-block: 5vh;
+    padding-block: 3vh;
     align-items: center;
 }
 
 /* Buttons */
 main#links > a.link {
-    width: 256px;
+    width: 50vw;
     margin-block: 1vh;
     padding-block: 1.5vh;
     border: 3px solid whitesmoke;
@@ -38,7 +37,6 @@ main#links > a.link {
     text-decoration: none;
     font-size: large;
     font-weight: bold;
-    cursor: pointer;
     transition: 0.16s;
 }
 /* hover animation */
