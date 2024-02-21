@@ -1,7 +1,7 @@
 // alias to retrieve DOM objects
 const $ = (selector) => document.querySelector(selector);
 
-window.onload = () => {
+function main() {
     // header
     $("#name").innerText = data.name;
     $("#handle").innerText = data.handle;
@@ -21,4 +21,4 @@ window.onload = () => {
         "beforeend",
         `<a href="${data.links.GitHub}">${data.handle}</a>`
     );
-};
+}
