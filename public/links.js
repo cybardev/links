@@ -1,4 +1,4 @@
-const data = {
+const info = {
     name: "Sheikh",
     handle: "@cybardev",
     tagline: "Software Developer | Pixel Artist | DevOps Enthusiast",
