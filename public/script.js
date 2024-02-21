@@ -4,7 +4,7 @@ const $ = (selector) => document.querySelector(selector);
 window.onload = () => {
     // header
     $("#name").innerText = data.name;
-    $("#handle").innerText = data.handle;
+    $("#handle").innerText += data.handle;
     $("#tagline").innerText = data.tagline;
 
     // links
