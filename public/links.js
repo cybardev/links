@@ -1,6 +1,6 @@
 const data = {
     name: "Sheikh",
-    handle: "cybardev",
+    handle: "@cybardev",
     tagline: "Software Developer | Pixel Artist | Computer Science Student",
     location: "Halifax, NS, Canada",
     links: {
