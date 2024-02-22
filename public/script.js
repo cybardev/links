@@ -3,17 +3,14 @@ const $ = (selector) => document.querySelector(selector);
 
 function populate(data) {
     // header
-    $("#name").innerText = data.name;
-    $("#handle").innerText = data.handle;
-    $("#tagline").innerText = data.tagline;
+    $("h1").innerText = data.name;
+    $("h2").innerText = data.handle;
+    $("h3").innerText = data.tagline;
 
     // links
-    const links = $("#links");
+    const links = $("main");
     for (const [site, url] of Object.entries(data.links)) {
-        links.insertAdjacentHTML(
-            "beforeend",
-            `<a href="${url}" class="link">${site}</a>`
-        );
+        links.insertAdjacentHTML("beforeend", `<a href="${url}">${site}</a>`);
     }
 
     // footer
