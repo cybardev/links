@@ -1,7 +1,7 @@
 // alias to retrieve DOM objects
 const $ = (selector) => document.querySelector(selector);
 
-function main() {
+function populate(data) {
     // header
     $("#name").innerText = data.name;
     $("#handle").innerText = data.handle;
