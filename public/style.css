@@ -46,9 +46,10 @@ main#links > a.link:hover {
 }
 
 /* Footer */
-footer > p#footer-text {
+footer {
+    margin-bottom: 1.5vh;
     font-size: large;
 }
-footer > p#footer-text > a {
+footer > a {
     color: #e2ade4;
 }
