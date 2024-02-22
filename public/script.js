@@ -17,7 +17,7 @@ function populate(data) {
     }
 
     // footer
-    $("#footer-text").insertAdjacentHTML(
+    $("footer").insertAdjacentHTML(
         "beforeend",
         `<a href="${data.links.GitHub}">${data.handle}</a>`
     );
