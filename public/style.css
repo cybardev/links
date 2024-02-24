@@ -1,21 +1,36 @@
 :root {
-    font-family: monospace;
+    /* Customization */
+    --font-family: monospace;
+    --text-color: whitesmoke;
+    --fg-color-light: #e2ade4;
+    --fg-color-dark: #dc3273;
+    --banner-gradient: linear-gradient(
+        135deg,
+        var(--fg-color-light),
+        var(--fg-color-dark)
+    );
+    --bg-color: black;
+    --link-color: var(--text-color);
+    --neon-color: var(--fg-color-light);
+    --footer-text-color: var(--text-color);
+    --footer-handle-text-color: var(--fg-color-light);
 }
 
 /* Header */
 header {
     padding-block: 1vh;
-    background-image: linear-gradient(135deg, #e2ade4, #dc3273);
+    background-image: var(--banner-gradient);
 }
 
 /* Body */
 body {
     min-height: 100vh;
-    background-color: black;
+    background-color: var(--bg-color);
     margin: 0;
     display: flex;
     flex-direction: column;
-    color: whitesmoke;
+    font-family: var(--font-family);
+    color: var(--text-color);
     text-align: center;
 }
 main {
@@ -32,9 +47,9 @@ main a:visited {
     width: 50vw;
     margin-block: 1vh;
     padding-block: 1.5vh;
-    border: 3px solid whitesmoke;
+    border: 3px solid var(--text-color);
     border-radius: 5px;
-    color: whitesmoke;
+    color: var(--text-color);
     text-decoration: none;
     font-size: large;
     font-weight: bold;
@@ -42,16 +57,17 @@ main a:visited {
 }
 /* hover animation */
 main > a:hover {
-    /* background-image: linear-gradient(135deg, #e2ade4, #dc3273); */
-    border: 3px solid #e2ade4;
-    box-shadow: 0 0 10px #e2ade4;
+    /* background-image: var(--banner-gradient); */
+    border: 3px solid var(--neon-color);
+    box-shadow: 0 0 10px var(--neon-color);
 }
 
 /* Footer */
 footer {
+    color: var(--footer-text-color);
     margin-bottom: 1.5vh;
     font-size: large;
 }
 footer > a {
-    color: #e2ade4;
+    color: var(--footer-handle-text-color);
 }
