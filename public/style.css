@@ -27,7 +27,8 @@ main {
 }
 
 /* Buttons */
-main > a {
+main > a,
+main a:visited {
     width: 50vw;
     margin-block: 1vh;
     padding-block: 1.5vh;
@@ -43,6 +44,7 @@ main > a {
 main > a:hover {
     /* background-image: linear-gradient(135deg, #e2ade4, #dc3273); */
     border: 3px solid #e2ade4;
+    box-shadow: 0 0 10px #e2ade4;
 }
 
 /* Footer */
