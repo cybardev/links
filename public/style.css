@@ -64,10 +64,15 @@ main > a:hover {
 
 /* Footer */
 footer {
-    color: var(--footer-text-color);
     margin-bottom: 1.5vh;
+}
+#footer-content {
+    color: var(--footer-text-color);
     font-size: large;
 }
-footer > a {
+#footer-content > a {
     color: var(--footer-handle-text-color);
+}
+#footer-content:hover {
+    text-shadow: 0 0 5px var(--neon-color);
 }
