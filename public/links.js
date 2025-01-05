@@ -9,6 +9,7 @@ const info = {
         Blog: "https://blog.cybar.dev",
         Instagram: "https://instagram.com/cybardev",
         Store: "https://shop.cybar.dev",
+        Games: "https://cybardev.itch.io"
         Email: "mailto:sheikh@cybar.dev",
     },
 };
